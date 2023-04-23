@@ -4,6 +4,64 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+
+.about-container {
+    background-color: white;
+    width: 50%;
+    padding: 4rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        width: 80%;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-container {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+}
+
+.skills-list {
+    text-align: left;
+    columns: 2;
+    font-size: 1.25rem;
+    margin: 2rem 3rem;
+    gap: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-list {
+        columns: 1;
+        margin: 1rem auto;
+    }
+}
+
+.detail-or-quote {
+    padding: 1rem 3rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .detail-or-quote {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
 html,
 body {
   margin: 0;
@@ -235,3 +293,5 @@ img.social-icon {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+

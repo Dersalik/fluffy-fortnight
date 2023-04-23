@@ -1,12 +1,26 @@
 {
-  "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
+  "description": "I am a highly skilled software engineer with a Bachelor's degree in Software Engineering. My expertise in C# programming and experience in building applications with ASP.NET Core and .NET 6, enables me to deliver robust and scalable solutions that meet the needs of any business. I am passionate about cloud computing, and I am dedicated to learning how to develop cutting-edge cloud solutions that drive digital transformation.",
   "skills": [
-    "Web design",
-    "User experience",
-    "Inclusive design",
-    "Focus group testing",
-    "Mobile user interfaces",
-    "Graphic design"
+    "Programming",
+    "C#",
+    ".NET 6",
+    "ASP.NET CORE",
+    "ASP.NET CORE MVC",
+    "ASP.NET CORE API",
+    "REST API",
+    "Data Modeling",
+    "Entity Framework Core 6",
+    "SQL",
+    "Microsoft Azure",
+    "Object Oriented Programming (OOP)",
+    "Java",
+    "Javascript",
+    "SQL Server",
+    "Visual Studio",
+    "C/C++",
+    "Software Development",
+    "Web Development"
   ],
-  "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
+  "detailOrQuote": "My strong background in software development, coupled with my ability to think creatively, allows me to tackle complex problems and deliver high-quality projects on time and within budget. I am constantly seeking to improve my skills and stay current with the latest industry trends and technologies. My passion for technology and drive to deliver outstanding results make me an asset to any organization."
+
 }

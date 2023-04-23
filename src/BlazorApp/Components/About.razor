@@ -1,4 +1,4 @@
-<section class="light" id="about">
+@*<section class="light" id="about">
     @if (hero is not null)
     {
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
@@ -22,6 +22,32 @@
         <hr />
         <p style="padding: 1rem 3rem 0;">@aboutme.DetailOrQuote</p>
     }
+    </div>
+</section>*@
+<section class="light" id="about">
+    @if (hero is not null)
+    {
+        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+    }
+    <h2>About Myself</h2>
+    <div class="about-container">
+        @if (aboutme is null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <p class="large">@aboutme.Description</p>
+            <hr />
+            <ul class="skills-list">
+                @foreach (var skill in aboutme.Skills)
+                {
+                    <li key="@skill">@skill</li>
+                }
+            </ul>
+            <hr />
+            <p class="detail-or-quote">@aboutme.DetailOrQuote</p>
+        }
     </div>
 </section>
 
