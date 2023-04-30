@@ -1,21 +1,21 @@
 <section class="dark" id="home">
     @if (hero is not null)
     {
-        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+        <img class="background" width="2" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    <div style="position: absolute; top: 30%; left: 2rem;">
-    @if (property is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <h1>@property.Name</h1>
-        <h2>@property.Title</h2>
-    }
-    </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
-        <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+    <div class="content">
+        @if (property is null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <h1>@property.Name</h1>
+            <h2>@property.Title</h2>
+        }
+@*        <div class="scroll-down">
+            <img src="images/down-arrow.svg" alt="scroll down" />
+        </div>*@
     </div>
 </section>
 

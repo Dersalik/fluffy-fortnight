@@ -1,8 +1,29 @@
 <div id="header">
-    <a href="#home" target="_top">Home</a>
-    <a href="#about" target="_top">About</a>
-    <a href="#experience" target="_top">Experience</a>
-    <a href="#education" target="_top">Education</a>
-    <a href="#portfolio" target="_top">Portfolio</a>
-    <a href="#contact" target="_top">Contact</a>
+    <a href="#home" target="_top" style="@tabStyle">Home</a>
+    <a href="#about" target="_top" style="@tabStyle">About</a>
+    <a href="#experience" target="_top" style="@tabStyle">Experience</a>
+    <a href="#education" target="_top" style="@tabStyle">Education</a>
+    <a href="#portfolio" target="_top" style="@tabStyle">Portfolio</a>
+    <a href="#contact" target="_top" style="@tabStyle">Contact</a>
+    <div class="toggle-tabs-icon" @onclick="ToggleTabs">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 </div>
+
+@if (showTabs)
+{
+
+}
+
+@code {
+    private bool showTabs = true;
+    private string tabStyle = "";
+
+    private void ToggleTabs()
+    {
+        showTabs = !showTabs;
+        tabStyle = showTabs ? "" : "display: none;";
+    }
+}

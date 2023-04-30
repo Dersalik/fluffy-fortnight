@@ -3,400 +3,595 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+.toggle-tabs-icon {
+    display: none;
+}
+
+
+
+/*
+    Home
+*/
+.background {
+    max-width: 100%;
+    width: 500px;
+   height: auto;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    /*    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;*/
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .content {
+        padding: 2rem;
+    }
+}
+/*
+    Button toggle tab 
+*/
+@media (max-width: 768px) {
+    .toggle-tabs-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+        .toggle-tabs-icon .bar {
+            display: block;
+            width: 40px;
+            height: 2px;
+            margin-bottom: 4px;
+            background-color: #333;
+            border-radius: 1px;
+            transition: transform 0.2s;
+        }
+
+        .toggle-tabs-icon.open .bar:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .toggle-tabs-icon.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .toggle-tabs-icon.open .bar:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+}
+
+
+
+/* For header */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+    #header a {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+    }
+
+        #header a:hover {
+            color: #007bff;
+        }
+
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+        #header a {
+            margin: 5px 0;
+        }
+}
+
 
 /*
     for experience section
 */
 
+/* Center the section */
 #experience {
     text-align: center;
-    background-color: #f8f8f8;
-    padding: 50px 0;
 }
 
-.experience-item {
-    margin-bottom: 40px;
+    /* Add padding to the container */
+    #experience .container {
+        padding: 60px 0;
+    }
+
+    /* Set max width for the section */
+    #experience .container {
+        max-width: 1200px;
+    }
+
+    /* Set margin auto for the row */
+    #experience .row {
+        margin: auto;
+    }
+
+    /* Set the width of the list items */
+    #experience .experience-item {
+        width: 100%;
+    }
+
+    /* Set the font size for the section title */
+    #experience .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    /* Set the font size for the position title */
+    #experience .position {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    /* Set the font size for the company name */
+    #experience .company {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    /* Set the font size for the date range */
+    #experience .dates {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* Set the font size for the job description */
+    #experience .description {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* Set the font size for the location */
+    #experience .location {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .position {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .company {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .dates {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .location {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
 }
 
-.position {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-.company {
-    font-size: 18px;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.dates {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.period {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-.description {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.location {
-    font-size: 14px;
-    color: #888;
-}
-/*
+    /*
     For edu section 
 */
-#education {
-    background-color: #f5f5f5;
-    padding: 80px 0;
-}
+    #education {
+        background-color: #f5f5f5;
+        padding: 80px 0;
+    }
 
-.education-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align:center;
-}
+    .education-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.education-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.education-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.education-item {
-    margin-bottom: 30px;
-}
-
-.education-university {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.education-degree {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 0;
-}
-
-@media screen and (max-width: 768px) {
     .education-title {
-        font-size: 28px;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .education-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .education-item {
+        margin-bottom: 30px;
     }
 
     .education-university {
-        font-size: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
     }
 
     .education-degree {
-        font-size: 16px;
-    }
-}
-/**
-    for about section 
-*/
-.about-container {
-    background-color: white;
-    width: 50%;
-    padding: 4rem;
-    margin: 3rem auto;
-    text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-    .about-container {
-        width: 80%;
-        padding: 2rem;
-        margin: 2rem auto;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .about-container {
-        width: 90%;
-        padding: 1rem;
-        margin: 1rem auto;
-    }
-}
-
-.skills-list {
-    text-align: left;
-    columns: 2;
-    font-size: 1.25rem;
-    margin: 2rem 3rem;
-    gap: 3rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .skills-list {
-        columns: 1;
-        margin: 1rem auto;
-    }
-}
-
-.detail-or-quote {
-    padding: 1rem 3rem 0;
-}
-
-@media only screen and (max-width: 480px) {
-    .detail-or-quote {
-        padding: 1rem;
-    }
-}
-
-
-
-
-
-
-
-
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-}
-
-div#main {
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  position: relative;
-}
-
-section.dark {
-  min-height: 100vh;
-  color: white;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-section.light {
-  color: black;
-  background: rgba(255, 255, 255, 0.35);
-  padding: 8rem 0;
-}
-
-section img.background {
-  width: 100vmax;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  pointer-events: none;
-  object-fit: cover;
-}
-
-h1 {
-  font-weight: 300;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
-  margin: 0;
-}
-
-@media screen and (max-width: 300px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 301px) and (max-width: 360px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 4rem;
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 361px) and (max-width: 420px) {
-  h1 {
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 5rem;
-    margin: 0;
-  }
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0;
-  text-align: center;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-p.large {
-  font-size: 24px;
-}
-
-p.small {
-  font-size: 15px;
-}
-
-hr {
-  margin: 2.5rem;
-}
-
-li {
-  line-height: 1.7;
-}
-
-li::marker {
-  color: #4e567e;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #4e567e;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 3rem;
-}
-
-@media screen and (max-width: 420px) {
-  .portfolio-container {
-    flex-direction: column;
-  }
-}
-
-.portfolio-hero {
-  max-width: 40%;
-  align-self: center;
-}
-
-@media screen and (max-width: 420px) {
-  .portfolio-hero {
-    max-width: 100%;
-    align-self: center;
-  }
-}
-
-.container {
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 330px 300px;
-  grid-gap: 20px;
-}
-
-@media screen and (max-width: 420px) {
-  .container {
-    margin: 20px auto;
-    display: inline;
-    grid-template-columns: 330px 300px;
-    grid-gap: 20px;
-  }
-}
-
-.container .box {
-  border-radius: 10px;
-  padding: 24px 16px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border: 1px solid rgb(204, 204, 204);
-  text-align: center;
-}
-
-img.social-icon {
-  width: 30px;
-  height: 30px;
-}
-
-#blazor-error-ui {
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 0;
     }
 
-.loading-progress {
-    position: relative;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    margin: 20vh auto 1rem auto;
-}
-
-    .loading-progress circle {
-        fill: none;
-        stroke: #e0e0e0;
-        stroke-width: 0.6rem;
-        transform-origin: 50% 50%;
-        transform: rotate(-90deg);
-    }
-
-        .loading-progress circle:last-child {
-            stroke: #1b6ec2;
-            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
-            transition: stroke-dasharray 0.05s ease-in-out;
+    @media screen and (max-width: 768px) {
+        .education-title {
+            font-size: 28px;
         }
 
-.loading-progress-text {
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
-}
+        .education-university {
+            font-size: 20px;
+        }
 
-    .loading-progress-text:after {
-        content: var(--blazor-load-percentage-text, "Loading");
+        .education-degree {
+            font-size: 16px;
+        }
     }
+    /**
+    for about section 
+*/
+    .about-container {
+        background-color: white;
+        width: 50%;
+        padding: 4rem;
+        margin: 3rem auto;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .about-container {
+            width: 80%;
+            padding: 2rem;
+            margin: 2rem auto;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .about-container {
+            width: 90%;
+            padding: 1rem;
+            margin: 1rem auto;
+        }
+    }
+
+    .skills-list {
+        text-align: left;
+        columns: 2;
+        font-size: 1.25rem;
+        margin: 2rem 3rem;
+        gap: 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .skills-list {
+            columns: 1;
+            margin: 1rem auto;
+        }
+    }
+
+    .detail-or-quote {
+        padding: 1rem 3rem 0;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .detail-or-quote {
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    div#main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        position: relative;
+    }
+
+        section.dark {
+            min-height: 100vh;
+            color: white;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        section.light {
+            color: black;
+            background: rgba(255, 255, 255, 0.35);
+            padding: 8rem 0;
+        }
+
+        section img.background {
+            width: 100vmax;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            pointer-events: none;
+            object-fit: cover;
+        }
+
+    h1 {
+        font-weight: 300;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 300px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 301px) and (max-width: 360px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 4rem;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 361px) and (max-width: 420px) {
+        h1 {
+            font-weight: 300;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 5rem;
+            margin: 0;
+        }
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+        p.large {
+            font-size: 24px;
+        }
+
+        p.small {
+            font-size: 15px;
+        }
+
+    hr {
+        margin: 2.5rem;
+    }
+
+    li {
+        line-height: 1.7;
+    }
+
+        li::marker {
+            color: #4e567e;
+        }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+        a:hover {
+            color: #4e567e;
+        }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .portfolio-container {
+            flex-direction: column;
+        }
+    }
+
+    .portfolio-hero {
+        max-width: 40%;
+        align-self: center;
+    }
+
+    @media screen and (max-width: 420px) {
+        .portfolio-hero {
+            max-width: 100%;
+            align-self: center;
+        }
+    }
+
+    .container {
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 330px 300px;
+        grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 420px) {
+        .container {
+            margin: 20px auto;
+            display: inline;
+            grid-template-columns: 330px 300px;
+            grid-gap: 20px;
+        }
+    }
+
+    .container .box {
+        border-radius: 10px;
+        padding: 24px 16px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        border: 1px solid rgb(204, 204, 204);
+        text-align: center;
+    }
+
+    img.social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #blazor-error-ui {
+        background: lightyellow;
+        bottom: 0;
+        box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+        display: none;
+        left: 0;
+        padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+        #blazor-error-ui .dismiss {
+            cursor: pointer;
+            position: absolute;
+            right: 0.75rem;
+            top: 0.5rem;
+        }
+
+    .loading-progress {
+        position: relative;
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        margin: 20vh auto 1rem auto;
+    }
+
+        .loading-progress circle {
+            fill: none;
+            stroke: #e0e0e0;
+            stroke-width: 0.6rem;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg);
+        }
+
+            .loading-progress circle:last-child {
+                stroke: #1b6ec2;
+                stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+                transition: stroke-dasharray 0.05s ease-in-out;
+            }
+
+    .loading-progress-text {
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+    }
+
+        .loading-progress-text:after {
+            content: var(--blazor-load-percentage-text, "Loading");
+        }
 
 
