@@ -1,3 +1,4 @@
+
 <section class="dark" id="home">
     @if (hero is not null)
     {
@@ -13,13 +14,12 @@
             <h1>@property.Name</h1>
             <h2>@property.Title</h2>
         }
-@*        <div class="scroll-down">
-            <img src="images/down-arrow.svg" alt="scroll down" />
-        </div>*@
+
     </div>
 </section>
 
 @code {
+
     [Parameter, EditorRequired]
     public required HttpClient Http { get; set; }
 
