@@ -1,0 +1,29 @@
+<section id="education">
+    <div class="education-container">
+        <h2 class="education-title">Education</h2>
+        <ul class="education-list">
+            @foreach (var edu in EducationData)
+            {
+                <li class="education-item">
+                    <h3 class="education-university">@edu.University</h3>
+                    <p class="education-degree">@edu.Degree, @edu.Year</p>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    private List<EducationModel> EducationData { get; set; } = new List<EducationModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch the education data from a JSON file
+        EducationData = await Http!.GetFromJsonAsync<List<EducationModel>>("sample-data/education.json");
+    }
+}

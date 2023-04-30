@@ -1,0 +1,39 @@
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <ul class="experience-list">
+            @foreach (var exp in ExperienceData)
+            {
+                <li class="experience-item">
+                    <h3 class="position">@exp.Position</h3>
+                    <p class="company">@exp.Company</p>
+                    @if (exp.StartDate != null && exp.EndDate != null)
+                    {
+                        <p class="dates">@exp.StartDate.Value.ToShortDateString() - @exp.EndDate.Value.ToShortDateString()</p>
+                        <p class="period">@(exp.EndDate.Value - exp.StartDate.Value).Humanize()</p>
+                    }
+                    else if (exp.StartDate != null)
+                    {
+                        <p class="dates">@exp.StartDate.Value.ToShortDateString() - Present</p>
+                        <p class="period">@(DateTime.UtcNow - exp.StartDate.Value).Humanize()</p>
+                    }
+                    <p class="description">@exp.Description</p>
+                    <p class="location">@exp.Location</p>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+@code {
+    [Parameter]
+    public HttpClient Http { get; set; }
+
+    private List<ExperienceModel> ExperienceData { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch the experience data from a JSON file
+        ExperienceData = await Http.GetFromJsonAsync<List<ExperienceModel>>("sample-data/experience.json");
+    }
+}

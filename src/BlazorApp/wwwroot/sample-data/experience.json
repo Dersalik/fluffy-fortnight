@@ -1,0 +1,18 @@
+{
+  {
+    "Position": "Software Engineer Intern",
+    "Company": "Shift Software",
+    "StartDate": "2022-07-01",
+    "EndDate": "2022-08-31",
+    "Location": "Arbil, Iraq",
+    "Description": "As a software engineer intern at Shift Software, I had the opportunity to work with a variety of technologies, including Asp.net Core, C#, and EF Core. I was able to apply my knowledge of these technologies to real-world projects, and I also had the chance to learn about Azure DevOps, a new and exciting technology in the field.",
+  },
+  {
+    "Position": "Software Engineer",
+    "Company": "Lulya Group",
+    "StartDate": "2021-07-01",
+    "EndDate": "2021-09-30",
+    "Location": "Erbil, Iraq",
+    "Description": "In my previous position as a software engineer, I was responsible for a range of tasks related to web development. This included using WordPress and Elementor to design and build websites, as well as gathering requirements and assisting with the deployment of software on-premise.",
+  }
+}
