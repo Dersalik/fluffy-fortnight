@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Pluralsight Epic Viewer 2022",
+    "issuer": "Pluralsight",
+    "date": "Oct 2022",
+    "image": "images/epicviewerbadge.png",
+    "description": "Received Pluralsight,epic viewer badge after watching 150 hours of content in 2022",
+    "Url": "https://app.pluralsight.com/achievements/share/a102efa4-7a7a-494b-a2f4-8572f67c3aa9"
+
+  },
+  {
+    "name": "Pluralsight Epic Viewer 2023",
+    "issuer": "Pluralsight",
+    "date": "Mar 2023",
+    "image": "images/epicviewerbadge.png",
+    "description": "Received Pluralsight,epic viewer badge after watching 150 hours of content in 2023",
+    "Url": "https://app.pluralsight.com/achievements/share/b0ee8038-1ec1-4b1b-bbe0-dc484f4471b5"
+
+  },
+  {
+    "name": "AZ-900: Microsoft Azure Fundamentals",
+    "issuer": "Microsoft",
+    "date": "Sep 2022",
+    "Url": "https://www.credly.com/badges/799b0914-144c-4d1a-827e-3534be486d99",
+    "image": "images/az900.png"
+  },
+  {
+    "name": "30 days of Postman - for developers",
+    "issuer": "Canvas Credentials (Badgr)",
+    "date": "Mar 2023",
+    "Url": "https://api.badgr.io/public/assertions/dMwjOEhVRbi6F8zB_FiZng?identity__email=mahamadarbil44%40gmail.com",
+    "image": "images/30dayspostman.png"
+  }
+]

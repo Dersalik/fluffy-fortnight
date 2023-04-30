@@ -1,0 +1,32 @@
+<h2 id="badges" class="badges-title">Badges</h2>
+<div class="badge-grid">
+    @foreach (var badge in BadgeList)
+    {
+        <a href="@badge.Url" class="badge-link">
+            <div class="badge-card">
+                <div class="badge-image">
+                    <img class="badge-image-img" src="@badge.image" alt="@badge.name" />
+                </div>
+                <div class="badge-details">
+                    <div class="badge-name">@badge.name</div>
+                    <div class="badge-issuer">@badge.issuer</div>
+                    <div class="badge-date">@badge.date</div>
+                    <div class="badge-description">@badge.description</div>
+                </div>
+            </div>
+        </a>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    private List<BadgeInfo> BadgeList { get; set; } = new List<BadgeInfo>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch the education data from a JSON file
+        BadgeList = await Http!.GetFromJsonAsync<List<BadgeInfo>>("sample-data/badges.json");
+    }
+}
