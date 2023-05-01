@@ -18,7 +18,7 @@
     font-size: 40px; /* adjust the size to fit the design */
     color: lightblue; /* use a slightly lighter color than the name */
     margin-bottom: 2rem;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
 }
 /*
     tab button 
