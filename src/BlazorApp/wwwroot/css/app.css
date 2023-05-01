@@ -3,6 +3,27 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+#property-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    margin-bottom: 10rem;
+    backdrop-filter: blur(1px);
+}
+
+#property-title {
+    font-family: 'Open Sans', sans-serif; /* use a different font for the title */
+    font-size: 40px; /* adjust the size to fit the design */
+    color: lightblue; /* use a slightly lighter color than the name */
+    margin-bottom: 2rem;
+    backdrop-filter: blur(3px);
+}
+/*
+    tab button 
+*/
+
 .toggle-tabs-icon {
     display: none;
 }
