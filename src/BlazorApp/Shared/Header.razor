@@ -15,16 +15,25 @@
 
 @if (showTabs)
 {
-
+    <!-- the rest of the code here -->
 }
 
 @code {
-    private bool showTabs = true;
+    private bool showTabs = false;
     private string tabStyle = "";
 
     private void ToggleTabs()
     {
-        showTabs = !showTabs;
-        tabStyle = showTabs ? "" : "display: none;";
+        if (showTabs == false)
+        {
+            showTabs = true;
+            tabStyle = "display: inline;";
+        }
+        else
+        {
+            showTabs = false;
+            tabStyle = "display: none;";
+        }
+
     }
 }
