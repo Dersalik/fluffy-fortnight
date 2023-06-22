@@ -13,6 +13,8 @@
         else
         {
             <p class="large">@aboutme.Description</p>
+
+
             <hr />
             <ul class="skills-list">
                 @foreach (var skill in aboutme.Skills)
@@ -24,6 +26,10 @@
             
             <hr />
             <p class="detail-or-quote">@aboutme.DetailOrQuote</p>
+            <h3 style="margin-top: 20px;">
+                <a style="display: inline-block; padding: 10px 20px; background-color: #428bca; color: #fff; text-decoration: none; border-radius: 4px; font-size: 16px;" href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">Download Resume</a>
+
+            </h3>
         }
     </div>
 </section>
@@ -44,4 +50,6 @@
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "about");
 
     }
+
+
 }

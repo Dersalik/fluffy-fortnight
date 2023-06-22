@@ -38,5 +38,10 @@
     "title": "Vehicle Management System API",
     "description": "Technologies used : C#, ASP.NET CORE 6 API, Azure, EF Core, .Net 6",
     "url": "https://github.com/Dersalik/Vehicle-Management-System-API"
+  },
+  {
+    "title": "Salik Translator Android",
+    "description": "Technologies used : Android Studio, Java",
+    "url": "https://github.com/Dersalik/Salik_Translator_Android"
   }
 ]
