@@ -27,6 +27,6 @@
   {
     "title": "Salik Job Portal System",
     "description": "Technologies used : C#, ASP.NET CORE 6 MVC, Azure, EF Core, .Net 6, ASP.NET CORE Identity",
-    "url": ""
+    "url": "https://salikportal.azurewebsites.net/"
   }
 ]
