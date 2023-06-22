@@ -1,11 +1,11 @@
 [
   {
-    "title": "Salik-Bug-Tracker API",
+    "title": "Salik Bug Tracker API",
     "description": "Technologies used : C#, ASP.NET CORE 6 API, EF Core",
     "url": "https://github.com/Dersalik/Salik-Bug-Tracker"
   },
   {
-    "title": "Salik-Translator",
+    "title": "Salik Translator",
     "description": "Technologies used : C#, ASP.NET CORE 6 Blazor, Azure Cognitive Services",
     "url": "https://github.com/Dersalik/Salik-Translator"
   },
@@ -15,12 +15,12 @@
     "url": "https://github.com/Dersalik/codespaces-project-template-dotnet"
   },
   {
-    "title": "Salik-Inventory-Management-System",
+    "title": "Salik Inventory Management System",
     "description": "Technologies used : C#, WinForms, EF Core, .Net 6",
     "url": "https://github.com/Dersalik/Salik-Inventory-Management-System"
   },
   {
-    "title": "Salik-School-Management-System-Web",
+    "title": "Salik School Management System Web",
     "description": "Technologies used : C#, ASP.NET CORE 6 MVC, EF Core, .Net 6",
     "url": "https://github.com/Dersalik/Salik-School-Management-System-Web"
   },
@@ -28,5 +28,15 @@
     "title": "Salik Job Portal System",
     "description": "Technologies used : C#, ASP.NET CORE 6 MVC, Azure, EF Core, .Net 6, ASP.NET CORE Identity",
     "url": "https://salikportal.azurewebsites.net/"
+  },
+  {
+    "title": "real easte management api",
+    "description": "Technologies used : Javascript, node js, Mongoose, express, mongoDB",
+    "url": "https://github.com/Dersalik/real-easte-management-api"
+  },
+  {
+    "title": "Vehicle Management System API",
+    "description": "Technologies used : C#, ASP.NET CORE 6 API, Azure, EF Core, .Net 6",
+    "url": "https://github.com/Dersalik/Vehicle-Management-System-API"
   }
 ]
