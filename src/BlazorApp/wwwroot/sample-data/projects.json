@@ -30,7 +30,7 @@
     "url": "https://salikportal.azurewebsites.net/"
   },
   {
-    "title": "Real easte management api",
+    "title": "Real estate management api",
     "description": "Technologies used : Javascript, node js, Mongoose, express, mongoDB",
     "url": "https://github.com/Dersalik/real-easte-management-api"
   },
