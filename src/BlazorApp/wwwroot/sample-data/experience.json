@@ -1,6 +1,11 @@
 [
 
-
+  {
+    "Position": "Back End Developer",
+    "Company": "Gateway",
+    "StartDate": "2023-07-05",
+    "Location": "Erbil, Iraq"
+  },
   {
     "Position": "Software Engineer Intern",
     "Company": "Shift Software",
@@ -17,4 +22,5 @@
     "Location": "Erbil, Iraq",
     "Description": "In my previous position as a software engineer, I was responsible for a range of tasks related to web development. This included using WordPress and Elementor to design and build websites, as well as gathering requirements and assisting with the deployment of software on-premise."
   }
+
 ]
