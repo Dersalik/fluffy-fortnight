@@ -25,6 +25,13 @@
     "image": "images/az900.png"
   },
   {
+    "name": "AZ-204: Developing Solutions for Microsoft Azure",
+    "issuer": "Microsoft",
+    "date": "Feb 2024",
+    "Url": "https://learn.microsoft.com/api/credentials/share/en-us/MahamadSardar-9540/4AD0F903C52FD06E?sharingId=E4EC4F8154DC4A59",
+    "image": "images/az204.svg"
+  },
+  {
     "name": "30 days of Postman - for developers",
     "issuer": "Canvas Credentials (Badgr)",
     "date": "Mar 2023",
