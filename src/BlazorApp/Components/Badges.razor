@@ -22,7 +22,7 @@
     [Parameter, EditorRequired]
     public required HttpClient Http { get; set; }
 
-    private List<BadgeInfo> BadgeList { get; set; } = new List<BadgeInfo>();
+    private List<BadgeInfo>? BadgeList { get; set; } = new List<BadgeInfo>();
 
     protected override async Task OnInitializedAsync()
     {

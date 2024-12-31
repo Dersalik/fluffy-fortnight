@@ -15,7 +15,14 @@
     "image": "images/epicviewerbadge.png",
     "description": "Received Pluralsight,epic viewer badge after watching 150 hours of content in 2023",
     "Url": "https://app.pluralsight.com/achievements/share/b0ee8038-1ec1-4b1b-bbe0-dc484f4471b5"
-
+  },
+  {
+    "name": "Pluralsight Epic Viewer 2024",
+    "issuer": "Pluralsight",
+    "date": "October 2024",
+    "image": "images/epicviewerbadge.png",
+    "description": "Received Pluralsight,epic viewer badge after watching 150 hours of content in 2024",
+    "Url": "https://app.pluralsight.com/achievements/share/8d213a31-ef4e-45da-8e66-169e6642f39d"
   },
   {
     "name": "AZ-900: Microsoft Azure Fundamentals",

@@ -19,7 +19,7 @@
     [Parameter, EditorRequired]
     public required HttpClient Http { get; set; }
 
-    private List<EducationModel> EducationData { get; set; } = new List<EducationModel>();
+    private List<EducationModel>? EducationData { get; set; } = new List<EducationModel>();
 
     protected override async Task OnInitializedAsync()
     {

@@ -57,7 +57,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
+        property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/myproperties.json");
         icons = await Http.GetFromJsonAsync<SocialIcons>("sample-data/socialicons.json");
     }
 }
