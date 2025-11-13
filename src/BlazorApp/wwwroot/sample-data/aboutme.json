@@ -41,5 +41,102 @@
     "HTML5",
     "CSS"
   ],
+  "skillCategories": [
+    {
+      "categoryName": "Programming Languages",
+      "categoryIcon": "fa-solid fa-code",
+      "categoryColor": "#3178c6",
+      "skills": [
+        "C#",
+        "Core Java",
+        "JavaScript",
+        "C/C++",
+        "SQL"
+      ]
+    },
+    {
+      "categoryName": "Backend Frameworks",
+      "categoryIcon": "fa-solid fa-server",
+      "categoryColor": "#6db33f",
+      "skills": [
+        "Spring Boot",
+        "Spring Framework",
+        "Spring Security",
+        "Spring Data",
+        "ASP.NET CORE",
+        "ASP.NET CORE MVC",
+        "ASP.NET CORE API",
+        ".NET 6",
+        "REST API",
+        "Microservices"
+      ]
+    },
+    {
+      "categoryName": "Databases & ORM",
+      "categoryIcon": "fa-solid fa-database",
+      "categoryColor": "#336791",
+      "skills": [
+        "Postgres",
+        "SQL Server",
+        "Hibernate",
+        "JPA",
+        "Entity Framework Core 6",
+        "Relational Databases"
+      ]
+    },
+    {
+      "categoryName": "Cloud & DevOps",
+      "categoryIcon": "fa-solid fa-cloud",
+      "categoryColor": "#0089d6",
+      "skills": [
+        "Microsoft Azure",
+        "Git",
+        "Gradle"
+      ]
+    },
+    {
+      "categoryName": "Development Tools",
+      "categoryIcon": "fa-solid fa-tools",
+      "categoryColor": "#e44d26",
+      "skills": [
+        "IntelliJ IDEA",
+        "Visual Studio",
+        "Visual Studio Code",
+        "Postman",
+        "API Testing"
+      ]
+    },
+    {
+      "categoryName": "Concepts & Architecture",
+      "categoryIcon": "fa-solid fa-brain",
+      "categoryColor": "#8b5cf6",
+      "skills": [
+        "Object Oriented Programming (OOP)",
+        "Data Structures",
+        "Data Modeling",
+        "Software Testing",
+        "Design Patterns",
+        "Problem Solving",
+        "Hexagonal Architecture"
+      ]
+    },
+    {
+      "categoryName": "Frontend Technologies",
+      "categoryIcon": "fa-solid fa-palette",
+      "categoryColor": "#f06529",
+      "skills": [
+        "HTML5",
+        "CSS"
+      ]
+    },
+    {
+      "categoryName": "Libraries & Utilities",
+      "categoryIcon": "fa-solid fa-box",
+      "categoryColor": "#f7931e",
+      "skills": [
+        "Vavr"
+      ]
+    }
+  ],
   "detailOrQuote": "My strong background in software development, coupled with my ability to think creatively, allows me to tackle complex problems and deliver high-quality projects on time and within budget. I am constantly seeking to improve my skills and stay current with the latest industry trends and technologies. My passion for technology and drive to deliver outstanding results make me an asset to any organization."
 }

@@ -12,23 +12,41 @@
         }
         else
         {
-            <p class="large">@aboutme.Description</p>
+            <p class="large about-description">@aboutme.Description</p>
 
-            <hr />
-            <ul class="skills-list">
-                @foreach (var skill in aboutme.Skills)
-                {
-                    <li key="@skill">@skill</li>
-                }
+            <hr class="section-divider" />
 
-            </ul>
-            
-            <hr />
+            <div class="skills-section">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    @foreach (var category in aboutme.SkillCategories)
+                    {
+                        <div class="skill-category-card" key="@category.CategoryName">
+                            <div class="category-header" style="border-left: 4px solid @category.CategoryColor;">
+                                <i class="@category.CategoryIcon category-icon" style="color: @category.CategoryColor;"></i>
+                                <h4 class="category-name">@category.CategoryName</h4>
+                            </div>
+                            <div class="category-skills">
+                                @foreach (var skill in category.Skills)
+                                {
+                                    <span class="skill-badge" key="@skill" style="border-color: @category.CategoryColor;">
+                                        @skill
+                                    </span>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <hr class="section-divider" />
             <p class="detail-or-quote">@aboutme.DetailOrQuote</p>
-            <h3 style="margin-top: 20px;">
-                <a style="display: inline-block; padding: 10px 20px; background-color: #428bca; color: #fff; text-decoration: none; border-radius: 4px; font-size: 16px;" href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">Download Resume</a>
-
-            </h3>
+            <div class="resume-section">
+                <a href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">
+                    <i class="fa-solid fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
         }
     </div>
 </section>
