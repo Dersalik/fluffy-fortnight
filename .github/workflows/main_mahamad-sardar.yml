@@ -14,26 +14,34 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      # Update checkout to v4 (v2 is deprecated)
-      - uses: actions/checkout@v4
+      # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # Use the latest setup-dotnet version
+      # Setup the latest .NET SDK
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '7.x'
 
-      - name: Build with dotnet
+      # Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Build the project
+      - name: Build project
         run: dotnet build --configuration Release
 
-      - name: Publish .NET app
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      # Publish the app to a local output folder (safe path)
+      - name: Publish project
+        run: dotnet publish -c Release -o myapp
 
-      - name: Upload artifact for deployment job
+      # Upload the published files as an artifact
+      - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: myapp
 
   deploy:
     runs-on: windows-latest
@@ -43,11 +51,13 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Download artifact from build job
+      # Download the published artifact
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: dotnet-app
 
+      # Deploy the app to Azure Web App
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
