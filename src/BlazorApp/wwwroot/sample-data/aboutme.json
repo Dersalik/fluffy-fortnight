@@ -1,45 +1,59 @@
 {
-  "description": "Currently, I'm utilizing my skills as a Backend Developer, deeply engaged in a digital banking project that challenges and expands my expertise daily. In this role, I'm leveraging Spring Boot, Java, and Postgres within a microservices hexagonal architecture to create robust and scalable solutions tailored to the specific needs of digital banking. My journey in software development began with a strong foundation in C# and .NET, where I developed a keen understanding of building efficient and responsive applications. This experience laid the groundwork for my expertise and continues to influence my approach to software development. I am also deeply passionate about cloud computing, an interest that has led me to become a Microsoft Certified Azure Developer Associate. This certification not only showcases my dedication to professional growth but also my commitment to staying at the forefront of technological advancements in cloud services.",
-  "skills": [
-    "Object Oriented Programming (OOP)",
-    "Data Structures",
-    "Data Modeling",
-    "Software Testing",
-    "Design Patterns",
-    "Problem Solving",
-    "Relational Databases",
-    "C#",
-    "Core Java",
-    "Spring Boot",
-    "Spring Framework",
-    "Microservices",
-    "Postgres",
-    "Hibernate",
-    "JPA",
-    "Vavr",
-    "Hexagonal Architecture",
-    "Spring Security",
-    "Spring Data",
-    "Gradle",
-    "IntelliJ IDEA",
-    "Javascript",
-    "C/C++",
-    ".NET 6",
-    "ASP.NET CORE",
-    "ASP.NET CORE MVC",
-    "ASP.NET CORE API",
-    "REST API",
-    "Entity Framework Core 6",
-    "SQL",
-    "Microsoft Azure",
-    "SQL Server",
-    "Visual Studio",
-    "Visual Studio code",
-    "Postman",
-    "API Testing",
-    "Git",
-    "HTML5",
-    "CSS"
-  ],
-  "detailOrQuote": "My strong background in software development, coupled with my ability to think creatively, allows me to tackle complex problems and deliver high-quality projects on time and within budget. I am constantly seeking to improve my skills and stay current with the latest industry trends and technologies. My passion for technology and drive to deliver outstanding results make me an asset to any organization."
+  "description": "Backend Developer passionate about building scalable solutions. Currently working on digital banking projects using Spring Boot, Java, and PostgreSQL within a microservices hexagonal architecture. Microsoft Certified Azure Developer Associate with a strong foundation in both Java and .NET ecosystems.",
+  "skills": [],
+  "skillCategories": {
+    "Programming Languages": [
+      "Core Java",
+      "C#",
+      "JavaScript",
+      "C/C++",
+      "SQL"
+    ],
+    "Frameworks & Libraries": [
+      "Spring Boot",
+      "Spring Framework",
+      "Spring Security",
+      "Spring Data",
+      "ASP.NET Core",
+      "ASP.NET Core MVC",
+      "ASP.NET Core API",
+      "Hibernate",
+      "JPA",
+      "Entity Framework Core",
+      "Vavr"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "SQL Server",
+      "Relational Databases"
+    ],
+    "Cloud & DevOps": [
+      "Microsoft Azure",
+      "Git",
+      "Gradle"
+    ],
+    "Tools & IDEs": [
+      "IntelliJ IDEA",
+      "Visual Studio",
+      "Visual Studio Code",
+      "Postman"
+    ],
+    "Core Concepts": [
+      "Object Oriented Programming",
+      "Microservices",
+      "Hexagonal Architecture",
+      "Design Patterns",
+      "REST API",
+      "Data Structures",
+      "Data Modeling",
+      "Software Testing",
+      "API Testing",
+      "Problem Solving"
+    ],
+    "Web Technologies": [
+      "HTML5",
+      "CSS"
+    ]
+  },
+  "detailOrQuote": "Passionate about writing clean, maintainable code and building scalable systems. Always learning, always growing."
 }

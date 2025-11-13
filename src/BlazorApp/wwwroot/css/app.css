@@ -505,54 +505,223 @@
         }
     }
     /**
-    for about section 
+    Minimalist About Section
 */
-    .about-container {
-        background-color: white;
-        width: 50%;
-        padding: 4rem;
-        margin: 3rem auto;
+    .minimalist-about {
+        padding: 4rem 2rem;
+        min-height: auto;
+    }
+
+    .about-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-header {
         text-align: center;
+        margin-bottom: 4rem;
     }
 
+    .about-header .section-title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        margin-bottom: 1.5rem;
+        color: #1a1a1a;
+    }
+
+    .about-description {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+
+    /* Skills Section */
+    .skills-section {
+        margin: 4rem 0;
+    }
+
+    .skills-title {
+        font-size: 1.75rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #1a1a1a;
+        letter-spacing: -0.3px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .skill-category {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        border: 1px solid #f0f0f0;
+        transition: all 0.3s ease;
+    }
+
+    .skill-category:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    .category-name {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+        color: #2c3e50;
+        letter-spacing: -0.2px;
+        border-bottom: 2px solid #4e567e;
+        padding-bottom: 0.75rem;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem;
+    }
+
+    .skill-tag {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: #f8f9fa;
+        color: #495057;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        font-weight: 400;
+        transition: all 0.2s ease;
+        border: 1px solid transparent;
+    }
+
+    .skill-tag:hover {
+        background: #4e567e;
+        color: white;
+        border-color: #4e567e;
+    }
+
+    /* About Footer */
+    .about-footer {
+        text-align: center;
+        margin-top: 4rem;
+        padding-top: 3rem;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .about-quote {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #666;
+        font-style: italic;
+        max-width: 700px;
+        margin: 0 auto 2rem;
+        font-weight: 300;
+    }
+
+    .resume-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        padding: 0.875rem 2rem;
+        background: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: 2px solid #1a1a1a;
+    }
+
+    .resume-button:hover {
+        background: white;
+        color: #1a1a1a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .resume-button svg {
+        transition: transform 0.3s ease;
+    }
+
+    .resume-button:hover svg {
+        transform: translateY(2px);
+    }
+
+    .loading-container {
+        text-align: center;
+        padding: 4rem;
+    }
+
+    /* Responsive Design */
     @media only screen and (max-width: 768px) {
-        .about-container {
-            width: 80%;
-            padding: 2rem;
-            margin: 2rem auto;
+        .minimalist-about {
+            padding: 3rem 1.5rem;
+        }
+
+        .about-header .section-title {
+            font-size: 2rem;
+        }
+
+        .about-description {
+            font-size: 1rem;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            padding: 1.5rem;
+        }
+
+        .skills-title {
+            font-size: 1.5rem;
+        }
+
+        .about-quote {
+            font-size: 1rem;
+        }
+
+        .resume-button {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9375rem;
         }
     }
 
     @media only screen and (max-width: 480px) {
-        .about-container {
-            width: 90%;
-            padding: 1rem;
-            margin: 1rem auto;
+        .minimalist-about {
+            padding: 2rem 1rem;
         }
-    }
 
-    .skills-list {
-        text-align: left;
-        columns: 2;
-        font-size: 1.25rem;
-        margin: 2rem 3rem;
-        gap: 3rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .skills-list {
-            columns: 1;
-            margin: 1rem auto;
+        .about-header .section-title {
+            font-size: 1.75rem;
         }
-    }
 
-    .detail-or-quote {
-        padding: 1rem 3rem 0;
-    }
+        .about-description {
+            font-size: 0.9375rem;
+        }
 
-    @media only screen and (max-width: 480px) {
-        .detail-or-quote {
-            padding: 1rem;
+        .skill-category {
+            padding: 1.25rem;
+        }
+
+        .category-name {
+            font-size: 1rem;
+        }
+
+        .skill-tag {
+            font-size: 0.8125rem;
+            padding: 0.4rem 0.875rem;
         }
     }
 

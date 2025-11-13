@@ -1,36 +1,51 @@
 
-<section class="light" id="about">
-    @if (hero is not null)
+<section class="light minimalist-about" id="about">
+    @if (aboutme is null)
     {
-        //<img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
-    }
-    <h2>About Myself</h2>
-    <div class="about-container">
-        @if (aboutme is null)
-        {
+        <div class="loading-container">
             <p><em>Loading...</em></p>
-        }
-        else
-        {
-            <p class="large">@aboutme.Description</p>
+        </div>
+    }
+    else
+    {
+        <div class="about-content">
+            <div class="about-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-description">@aboutme.Description</p>
+            </div>
 
-            <hr />
-            <ul class="skills-list">
-                @foreach (var skill in aboutme.Skills)
-                {
-                    <li key="@skill">@skill</li>
-                }
+            <div class="skills-section">
+                <h3 class="skills-title">Skills & Expertise</h3>
 
-            </ul>
-            
-            <hr />
-            <p class="detail-or-quote">@aboutme.DetailOrQuote</p>
-            <h3 style="margin-top: 20px;">
-                <a style="display: inline-block; padding: 10px 20px; background-color: #428bca; color: #fff; text-decoration: none; border-radius: 4px; font-size: 16px;" href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">Download Resume</a>
+                <div class="skills-grid">
+                    @foreach (var category in aboutme.SkillCategories)
+                    {
+                        <div class="skill-category">
+                            <h4 class="category-name">@category.Key</h4>
+                            <div class="skill-tags">
+                                @foreach (var skill in category.Value)
+                                {
+                                    <span class="skill-tag" key="@skill">@skill</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
 
-            </h3>
-        }
-    </div>
+            <div class="about-footer">
+                <p class="about-quote">@aboutme.DetailOrQuote</p>
+                <a href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">
+                    <span>Download Resume</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    }
 </section>
 
 @code {
@@ -41,11 +56,9 @@
     public required HeroImageService HeroImageService { get; set; }
 
     private AboutMe? aboutme;
-    private HeroImage? hero;
 
     protected override async Task OnInitializedAsync()
     {
         aboutme = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
-        hero = await HeroImageService.GetHeroAsync(img => img.Name is "about");
     }
 }
