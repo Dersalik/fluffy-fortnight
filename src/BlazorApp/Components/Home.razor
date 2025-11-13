@@ -1,9 +1,5 @@
 
-<section class="dark" id="home">
-    @if (hero is not null)
-    {
-        <img class="background" width="2" src="@(hero.Src)" alt="@(hero.Alt)" />
-    }
+<section id="home">
     <div class="content">
         @if (property is null)
         {
@@ -14,7 +10,6 @@
             <h1 id="property-name">@property.Name</h1>
             <h2 id="property-title">@property.Title</h2>
         }
-
     </div>
 </section>
 

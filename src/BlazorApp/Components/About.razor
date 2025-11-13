@@ -1,9 +1,5 @@
 
-<section class="light" id="about">
-    @if (hero is not null)
-    {
-        //<img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
-    }
+<section id="about">
     <h2>About Myself</h2>
     <div class="about-container">
         @if (aboutme is null)
@@ -20,15 +16,13 @@
                 {
                     <li key="@skill">@skill</li>
                 }
-
             </ul>
-            
+
             <hr />
             <p class="detail-or-quote">@aboutme.DetailOrQuote</p>
-            <h3 style="margin-top: 20px;">
-                <a style="display: inline-block; padding: 10px 20px; background-color: #428bca; color: #fff; text-decoration: none; border-radius: 4px; font-size: 16px;" href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">Download Resume</a>
-
-            </h3>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="pdfs/MahamadSardarResume.pdf" download="MahamadSardarResume.pdf" class="resume-button">Download Resume</a>
+            </div>
         }
     </div>
 </section>
